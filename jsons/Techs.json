@@ -1,0 +1,682 @@
+[
+	// Landfall Era
+	{
+		"columnNumber": 0,
+		"era": "Landfall era",
+		"techCost": 20,
+		"buildingCost": 40,
+		"wonderCost": 180,
+		"techs": [
+			{
+				"name": "Old Earth Knowledge",
+				"row": 8,
+				"quote": "'Orbiting Earth in the spaceship, I saw how beautiful our planet is. People, let us preserve and increase this beauty, not destroy it!' - Yuri Gagarin",
+				"uniques": ["Starting tech"],
+				"civilopediaText": [
+					{
+						"text": "'Orbiting Earth in the spaceship, I saw how beautiful our planet is. People, let us preserve and increase this beauty, not destroy it!' - Yuri Gagarin"
+					}
+				]
+			}
+		]
+	},
+	{
+		"columnNumber": 1,
+		"era": "Landfall era",
+		"techCost": 35,
+		"buildingCost": 60,
+		"wonderCost": 180,
+		"techs": [
+			{
+				"name": "Xenobiology",
+				"row": 3,
+				"quote": "'Such an exciting new place, filled with amazing and exotic organisms! Well, exotic for a while, at least.' - Savitri Kumar, xenobiologist",
+				"prerequisites": ["Old Earth Knowledge"]
+			},
+			{
+				"name": "Xenogeology",
+				"row": 5,
+				"quote": "'There's no such thing as a simple rock. This here is the foundation of everything we'll build here.' - Emmanuel Junkers, geologist",
+				"prerequisites": ["Old Earth Knowledge"]
+			},
+			{
+				"name": "Habitation",
+				"row": 7,
+				"quote": "'Sure, these prefab homes are nice, they have atmo, they have AC, they have electricity - but you know what would be cool? DOMES!' - Truong Vanth Ngo, environmental engineer",
+				"prerequisites": ["Old Earth Knowledge"]
+			},
+			{
+				"name": "Computing",
+				"row": 8,
+				"quote": "'Back then, we had the network and infrastructure to make a computer that fit in the palm of your hand. Now we got to do that all over again.' - Jose Jacinto, engineer",
+				"prerequisites": ["Old Earth Knowledge"],
+				"uniques": ["Enables conversion of city production to [Science]"]
+			},
+			{
+				"name": "Portable Power Sources",
+				"row": 10,
+				"quote": "'Batteries? These aren't your grandma's lithium ion batteries! They're called Radioisotope Thermal Generators, and they're nice to have!' - Vladimir Mradek, engineer",
+				"prerequisites": ["Old Earth Knowledge"]
+			},
+			{
+				"name": "Engineering",
+				"row": 11,
+				"quote": "'I'll thwack ye over the head if you tell me to 'reverse the shield polarity' again.' - Montgomier 'Scotty' Scotch, chief engineer",
+				"prerequisites": ["Old Earth Knowledge"],
+				"uniques": ["Roads connect tiles across rivers"]
+			},
+			{
+				"name": "Hydrodynamics",
+				"row": 12,
+				"quote": "'Once again, this whole biosphere is possible due to water! It's everywhere, get used to it.' - Jeanie O'Shea, scientist",
+				"prerequisites": ["Old Earth Knowledge"]
+			},
+			{
+				"name": "Frontier Armaments",
+				"row": 14,
+				"quote": "'Listen, I don't want those bugs to nibble our colony to pieces. Guns and patrols are mandatory! No use whining about it!' - Derek Mbata, security chief",
+				"prerequisites": ["Old Earth Knowledge"]
+			}
+		]
+	},
+	{
+		"columnNumber": 2,
+		"era": "Landfall era",
+		"techCost": 55,
+		"buildingCost": 100,
+		"wonderCost": 200,
+		"techs": [
+			{
+				"name": "Xenoagriculture",
+				"row": 2,
+				"quote": "'Breeding different strains together and splicing some genes so these plants are edible - it ain't much, but it's honest work.' - John Appleseed, farmer",
+				"prerequisites": ["Xenobiology"]
+			},
+			{
+				"name": "Xenochemistry",
+				"row": 4,
+				"quote": "'You have no idea how much of them have wildly different toxins. Oh yeah, some of those might even be beneficial in the right doses.' - Elsa Nesbitt, medical officer",
+				"prerequisites": ["Xenobiology", "Xenogeology"]
+			},
+			{
+				"name": "Exotic Crystalline Extraction",
+				"row": 5,
+				"quote": "'All that glitters isn't just gold... but can be turned into a profit margin, if you know how to take it.' - Paula Walpole, CEO of Walpole-Yuen Inc.",
+				"prerequisites": ["Xenogeology"]
+			},
+			{
+				"name": "Pioneer Administration",
+				"row": 8,
+				"quote": "'One thing I've learned is that you can run to another planet all you like, the paperwork can and will catch up to you eventually.' - Yuen Xin Tiao, junior administrator",
+				"prerequisites": ["Computing", "Habitation"],
+				"uniques": ["Enables Open Borders agreements", "May buy [Mercenary Offices] buildings with [Gold] [in all cities]"]
+			},
+			{
+				"name": "Hovercrafts",
+				"row": 11,
+				"quote": "'Will you look at that beauty of a machine! She glides like an opera singer, packs enough punch for the local critters, and more importantly, free of eels!' - Aswan Fulani, mechanic",
+				"prerequisites": ["Hydrodynamics", "Engineering"],
+				"uniques": ["Enables embarkation for land units"]
+			},
+			{
+				"name": "Robotics",
+				"row": 12,
+				"quote": "'We're still a long way from making giant death robots like in the animays of old, but these little fellas sure can fit a lot of exploring in their chassis!' - Valdo Pentecost, mechanic",
+				"prerequisites": ["Engineering", "Portable Power Sources"]
+			}
+		]
+	},
+	// Exploration Era
+	{
+		"columnNumber": 3,
+		"era": "Exploration era",
+		"techCost": 105,
+		"buildingCost": 160,
+		"wonderCost": 320,
+		"techs": [
+			{
+				"name": "Xeno-Grafting",
+				"row": 2,
+				"quote": "'Now we can plant these straight on the ground! Ain't that a nice thing to have?' - John Appleseed, farmer",
+				"prerequisites": ["Xenoagriculture"]
+			},
+			{
+				"name": "Xeno-Medicine",
+				"row": 3,
+				"quote": "'I was right! As they say, anything can be medicine if taken at the right dose at the right situation. Now, who wants to get me some more Darter venom sacs? Anyone?' - Elsa Nesbitt, medical officer",
+				"prerequisites": ["Xenochemistry"]
+			},
+			{
+				"name": "Deep Resource Scanning",
+				"row": 4,
+				"quote": "'Aye, that vein may be in deep, but we can get at them. Get the engineers, and prep the drill-dozer!' - Karl McUrist, CEO of Deep Rock Ganymede",
+				"prerequisites": ["Exotic Crystalline Extraction"]
+			},
+			{
+				"name": "Synthetic Materials",
+				"row": 5,
+				"quote": "'I ain't saying these are plastics because there's just so much of them strewn all over in old Earth... but these, these are plastics. Maybe even rubber!' - Ismara Yanuar, chemist",
+				"prerequisites": ["Xenochemistry"],
+				"uniques": [
+					"[+20]% Strength <for [All] units> <when defending>"
+				]
+			},
+			{
+				"name": "Research Networks",
+				"row": 8,
+				"quote": "'Neat, now I can peer review without delay! I mean, what else are these nerds going to use it, besides research?' - Jeanie O'Shea, scientist",
+				"prerequisites": ["Pioneer Administration"],
+				"uniques": ["Enables Research agreements"]
+			},
+			{
+				"name": "Astronomy",
+				"row": 10,
+				"quote": "'Over here as it was over there, the same stars shine down on us. Well, you get the gist of it.' - Pavel Samurov, explorer",
+				"prerequisites": ["Hovercrafts"],
+				"uniques": [
+					"[+1] Movement <for [Embarked] units>",
+					"Enables [Embarked] units to enter ocean tiles"
+				]
+			},
+			{
+				"name": "Aerial Drones",
+				"row": 12,
+				"quote": "'Look at them glide, look at them soar! Watch as this baby goes from 0 to 100 in less than a second! You can't go wrong with drones, no siree.' - Aswan Fulani, mechanic",
+				"prerequisites": ["Robotics","Hovercrafts"]
+			},
+			{
+				"name": "Military Ballistics",
+				"row": 14,
+				"quote": "'You see, these are good guns, they shoot straight. Good to have when the neighbors get uppity.' - Derek Mbata, garrison commander",
+				"prerequisites": ["Frontier Armaments","Robotics"]
+			}
+		]
+	},
+	{
+		"columnNumber": 4,
+		"era": "Exploration era",
+		"techCost": 175,
+		"buildingCost": 220,
+		"wonderCost": 440,
+		"techs": [
+			{
+				"name": "Offworld Industries",
+				"row": 3,
+				"quote": "'You know what we should do? We'll set up mines here, and then we get someone else to pay us to work them! I see it as a win-win.' - Karl McUrist, CEO of Deep Rock Ganymede",
+				"prerequisites": ["Deep Resource Scanning","Xeno-Grafting","Xeno-Medicine"],
+				"uniques": ["Enables conversion of city production to [Gold]"]
+			},
+			{
+				"name": "Efficient Extraction Methods",
+				"row": 4,
+				"quote": "'Oy, tell them blokes to start usin' the ore refinery right! Bossman wants that sweet purified metal!' - Tycho Dawes, spokesperson for Belta V Offworld Mining",
+				"prerequisites": ["Deep Resource Scanning","Synthetic Materials"]
+			},
+			{
+				"name": "Hab-Domes",
+				"row": 6,
+				"quote": "'Now these are what I'm talking about! No more bumping your shins on room dividers! No more stale friggin' recycled air! We have DOMES!' - Truong Vanth Ngo, environmental engineer",
+				"prerequisites": [
+					"Habitation",
+					"Synthetic Materials"
+				]
+			},
+			{
+				"name": "Stable Fission Power",
+				"row": 9,
+				"quote": "'Yeah, it's the safest design we can make, with a robust output - but for goodness sakes, don't bang on it just because you want it to start up faster!' - Anton Rucevic, Tokamak reactor technician",
+				"prerequisites": ["Portable Power Sources","Research Networks"]
+			},
+			{
+				"name": "Payload Delivery",
+				"row": 10,
+				"quote": "'Back in those days, we've put so many of those satellites in low orbit that it was getting hard to plot a new orbital trajectory. Kind of strange looking at this pristine, satellite-free orbit.' - Vidal Rajev, aerospace engineer",
+				"prerequisites": ["Astronomy"]
+			},
+			{
+				"name": "Aeronautics",
+				"row": 12,
+				"quote": "'Never thought I'd soar in the wild blue yonder over here - just kiddin', son! If it can't be done, find a way to make it, like I did!' - Harvey Hawkes, CEO of Blue Streak Aerodynamics",
+				"prerequisites": ["Aerial Drones"]
+			},
+			{
+				"name": "Missiles",
+				"row": 14,
+				"quote": "'You should aspire to be like the humble missile. The missile always knows where it's at.' - General Daejung Kwan",
+				"prerequisites": ["Aerial Drones", "Military Ballistics"]
+			}
+		]
+	},
+	// Colonization Era
+	{
+		"columnNumber": 5,
+		"era": "Colonization era",
+		"techCost": 275,
+		"buildingCost": 300,
+		"wonderCost": 600,
+		"techs": [
+			{
+				"name": "Crust Fracking",
+				"row": 3,
+				"quote": "'All I know that this method uses water, and enables us to dig deeper into the mantle. Mineral output's never been higher!' - Rachel Brightheaven, mine overseer",
+				"prerequisites": ["Offworld Industries","Efficient Extraction Methods"]
+			},
+			{
+				"name": "Info Networks",
+				"row": 7,
+				"quote": "'They did WHAT on my network?! ...Well, these funny cats are nice...' - Jeanie O'Shea, scientist",
+				"prerequisites": ["Research Networks","Offworld Industries"],
+				//"uniques": ["May buy [Mercenary Offices] buildings with [Gold] [in all cities]"]
+			},
+			{
+				"name": "Colony Administration",
+				"row": 8,
+				"quote": "'I wouldn't know what to do if we haven't installed more bandwidth and more servers. It would be a bureaucratic hell, signed in triplicate.' - Yuen Xin Tiao, senior administrator",
+				"uniques": [
+					"Enables Defensive Pacts"
+				]
+				"prerequisites": ["Hab-Domes", "Research Networks"]
+			},
+			{
+				"name": "Satellite Networks",
+				"row": 11,
+				"quote": "'C'est magnifique, these man-made orbital angels are - connecting each and every one of us from high on up.' - Camille Jourdain, head of Thespiaux Medianet",
+				"prerequisites": ["Payload Delivery","Aeronautics"],
+				"uniques": [
+					"Improves movement speed on roads",
+					"[+1] Movement <for [Embarked] units>"
+				]
+			},
+			{
+				"name": "Strike Drones",
+				"row": 12,
+				"quote": "'Luk up suh, di steel bud a nuh fi wi fren. (Look up there, the steel bird is not our friend).' - Captain Omnira Pessoa",
+				"prerequisites": ["Aeronautics","Missiles"]
+			},
+			{
+				"name": "Alloy Microstructures",
+				"row": 13,
+				"quote": "'See under the microscope - these honeycomb-like molecular structures in the metal allows us to have an alloy that's strong enough to withstand conventional cannon fire, yet light enough to be buoyant by itself.' - Benny Chen, materials scientist",
+				"prerequisites": ["Missiles"]
+			},
+			{
+				"name": "Next-Gen Armaments",
+				"row": 14,
+				"quote": "'There is a possibility of peace in our lifetime - one that is enforced by superior firepower.' - Diktat Gregor Radec",
+				"prerequisites": ["Missiles"]
+			}
+		]
+	},
+	{
+		"columnNumber": 6,
+		"era": "Colonization era",
+		"techCost": 485,
+		"buildingCost": 400,
+		"wonderCost": 800,
+		"techs": [
+			{
+				"name": "Genetics",
+				"row": 3,
+				"quote": "'Once I finish decoding these sequences, we'll finally solve that nature versus nurture problem.' - Savitri Kumar, xenobiologist",
+				"prerequisites": ["Crust Fracking","Info Networks"]
+			},
+			{
+				"name": "Cryptocurrency",
+				"row": 5,
+				"quote": "'Trust me, this new e-Credit is no fad like non-fungible tokens, your Credit history's safe in this blockchain algorithm.' - Murat Yersinoglu, economist",
+				"prerequisites": ["Info Networks", "Colony Administration"]
+			},
+			{
+				"name": "Colonial Culture",
+				"row": 6,
+				"quote": "'Aye, you can rickroll, but can ye ken to thole a loonerin'?' - Anonymous on ColonyChan",
+				"prerequisites": ["Info Networks", "Colony Administration"]
+			},
+			{
+				"name": "Mecha Prototypes",
+				"row": 9,
+				"quote": "'Our acutators and joints are the best in the business. Soon they will outperform wheels completely.' - Gunther Welkin, CEO of Jaeger Engineering",
+				"prerequisites": ["Next-Gen Armaments", "Stable Fission Power"]
+			},
+			{
+				"name": "Lasers",
+				"row": 12,
+				"quote": "'Now that's what I call pin-point photon precision.' - General Omar Bakerson",
+				"prerequisites": ["Next-Gen Armaments", "Satellite Networks"]
+			},
+			{
+				"name": "Exoskeletons",
+				"row": 13,
+				"quote": "'Cargo assist servos, modular combat plates, all in one easy to wear package - each and every soldier should have one of these.' - General Ingrid Rasmussen",
+				"prerequisites": ["Next-Gen Armaments","Strike Drones"]
+			},
+			{
+				"name": "Composite Armor",
+				"row": 14,
+				"quote": "'Sometimes pure metal just isn't enough. That's where the plastic webbing and ceramic plates come in - but that's old news... Now we can do this on the micrometer scale.' - Gordon Huerta, materials scientist",
+				"prerequisites": ["Next-Gen Armaments", "Alloy Microstructures"]
+			},
+		]
+	},
+	// Halcyon Era
+	{
+		"columnNumber": 7,
+		"era": "Halcyon era",
+		"techCost": 780,
+		"buildingCost": 520,
+		"wonderCost": 1040,
+		"techs": [
+			{
+				"name": "Cloning",
+				"row": 3,
+				"quote": "'Sure, she shares my DNA, but that doesn't mean she's not her own person.' - Dila Gandhari 2, cloning scientist",
+				"prerequisites": ["Genetics"]
+			},
+			{
+				"name": "Metaverse",
+				"row": 5,
+				"quote": "'How come we have travelled to another planet - to explore the new world and the galaxy - to instead spend most of our time in virtual spaces? The first pioneers would be ashamed.' - Hamsa Lcujic, digital philosopher",
+				"prerequisites": ["Cryptocurrency", "Colonial Culture"]
+			},
+			{
+				"name": "Net Culture",
+				"row": 6,
+				"quote": "'Dang, chum, where'd you get those absolute drek memes from, your OG-nanna's stash.io on ol-E? Maybe if you drop those yee-yee ass memes, you'll have Xeno-chan bouncing all up out yo chest, knawmean?' - Anonymous on ColonyChan",
+				"prerequisites": ["Colonial Culture"]
+			},
+			{
+				"name": "Combat Mechas",
+				"row": 9,
+				"quote": "'Finally, a weapon to surpass modern armor! Their mobility will rewrite the rules of the battlefield.' - General Amuro Aznable",
+				"prerequisites": ["Mecha Prototypes"]
+			},
+			{
+				"name": "Cybernetics",
+				"row": 13,
+				"quote": "'As I see it, this is just one way to augment our capabilities. Evolution is no longer the monopoly of natural processes.' - Director Gladys Winters, Skye Robotics",
+				"prerequisites": ["Exoskeletons"]
+			},
+			{
+				"name": "Orbital Deterrents",
+				"row": 14,
+				"quote": "'And I repeat once again, this so-called double-edged sword of Damocles is to ensure the nuclear genie is securely in its bottle - nothing more.' - General Yelena Komarova",
+				"prerequisites": ["Composite Armor","Lasers"]
+			},
+		]
+	},
+	{
+		"columnNumber": 8,
+		"era": "Halcyon era",
+		"techCost": 1150,
+		"buildingCost": 660,
+		"wonderCost": 1320,
+		"techs": [
+			{
+				"name": "Quantum Theory",
+				"row": 5,
+				"quote": "'Discerning the properties of these fleeting quantum subparticles allows us to start delving into the deeper mysteries of the universe.' - CEO Kirii Toma, Toma Heavy Industries",
+				"prerequisites": ["Metaverse"]
+			},
+			{
+				"name": "Xenoarchaeology",
+				"row": 6,
+				"quote": "'Always seek to learn the lessons of our past, for they will prepare us for the future.' - Igider Zeroual",
+				"prerequisites": ["Net Culture"]
+			},
+			{
+				"name": "Virtual Drugs",
+				"row": 8,
+				"quote": "'We live in an age where sick people could download cures directly into their brains, and have their bodies produce the needed drugs. And of course, the junkies found a way to abuse it from day one!' - Dr. Casey Milligan, virtual drug specialist",
+				"prerequisites": ["Cybernetics", "Net Culture"]
+			},
+			{
+				"name": "Fusion Power",
+				"row": 10,
+				"quote": "'Gentlemen, behold - the unmatched power of the sun.' - Surya Chandrasekhar, fusion scientist",
+				"prerequisites": ["Combat Mechas","Lasers"]
+			},
+			{
+				"name": "Mind-Machine Interface",
+				"row": 12,
+				"quote": "'Controlling a mech at the speed of thought, as if it is part of your own body - that is now possible, ladies and gentlemen.' - Ida Stevenson, bionics scientist",
+				"prerequisites": ["Cybernetics","Combat Mechas"]
+			},
+			{
+				"name": "Cosmonautics",
+				"row": 14,
+				"quote": "'Well, we'll set our navsats towards good ol' Orion; A parsec in, a parsec out, but watch for the aphelion!' - lyrics from a popular space shanty",
+				"prerequisites": ["Orbital Deterrents"],
+				"uniques": ["Reveals the entire map"]
+			},
+		]
+	},
+	// Realization Era
+	{
+		"columnNumber": 9,
+		"era": "Realization era",
+		"techCost": 1600,
+		"buildingCost": 820,
+		"wonderCost": 1640,
+		"techs": [
+			{
+				"name": "Genetic Hybridization",
+				"row": 3,
+				"quote": "'Claims of us turning unwilling people into human-insect monsters are unfounded. We have digitally signed records of our clients volunteering to be one.' - Igor Brundle, geneticist",
+				"prerequisites": ["Cloning","Xenoarchaeology"]
+			},
+			{
+				"name": "Terraforming",
+				"row": 4,
+				"quote": "'With our current terraforming technology, what we did on Mars seem like child's play.' - Brigit Oxoa, terraformer",
+				"prerequisites": ["Cloning", "Xenoarchaeology"]
+			},
+			{
+				"name": "Quantum Computing",
+				"row": 5,
+				"quote": "'Using quantum multi-states in computing isn't exactly a new idea, but it's one that we can now realize at low cost.' - Johan Mbaye, electronics entrepreneur",
+				"prerequisites": ["Quantum Theory"]
+			},
+			{
+				"name": "Xeno Psychology",
+				"row": 6,
+				"quote": "'Ah, these boys are of the simple sort, they're just hungry most of the time. The other times, though? Different sorts of thinkin' happenin'!' - Smetre D'Poloty",
+				"prerequisites": ["Xenoarchaeology"]
+			},
+			{
+				"name": "Cyberbrains",
+				"row": 11,
+				"quote": "'Upgrade your gray matter, because one day, it will matter.' - Professor Delon Trikay, cyberbrain researcher",
+				"prerequisites": ["Mind-Machine Interface", "Virtual Drugs"]
+			},
+			{
+				"name": "Metamaterials",
+				"row": 13,
+				"quote": "'A new horizon opens in the field of stealth. One we can exploit.' - Major Chihiro Kusanagi, Daikyu Boei Kikan",
+				"prerequisites": ["Cosmonautics"]
+			},
+		]
+	},
+	{
+		"columnNumber": 10,
+		"era": "Realization era",
+		"techCost": 2350,
+		"buildingCost": 1000,
+		"wonderCost": 2000,
+		"techs": [
+			{
+				"name": "Artificial Intelligence",
+				"row": 5,
+				"quote": "'Forget Captcha, forget the Turing test - this AI can make you doubt you are human.' - ROK-0, AI",
+				"prerequisites": ["Quantum Computing"]
+			},
+			{
+				"name": "Antimatter Harnessing",
+				"row": 7,
+				"quote": "'Imagine that! Entire galaxies' worth of so-called 'dark matter' that exist right on top of our reality, separated by a thin 'brane. I'd like to explore it, but too bad they explode when coming into contact with matter.' - Jaarsa Luminen, physicist",
+				"prerequisites": ["Metamaterials", "Quantum Computing"]
+			},
+			{
+				"name": "Stasis Fields",
+				"row": 9,
+				"quote": "'With this, we utilize energy to literally stop time in a limited area. Anything that enter this field will slow down until they, too, are frozen in time.' - Mori Tokimasa, physicist",
+				"prerequisites": ["Fusion Power"]
+			},
+			{
+				"name": "Mind Linking",
+				"row": 11,
+				"quote": "'In the science-fictions of the past, this would be called 'telepathy'. But does telepathy have inbuilt firewalls and read permissions? I don't think so.' - Kwame Nkodo, intermind-comms engineer",
+				"prerequisites": ["Cyberbrains", "Xeno Psychology"]
+			},
+			{
+				"name": "Nerve Stapling",
+				"row": 12,
+				"quote": "'Finally we have a method to deal with these dissidents that preserves their humanly values.' - Imperator Cain Stalia",
+				"prerequisites": ["Cyberbrains"]
+			},
+			{
+				"name": "Nanotechnology",
+				"row": 13,
+				"quote": "'They may be smaller than a dust mote, but boy do they pack a lot of potential. Nanomachines, son!' - Duke Armstrong, nanomachine scientist",
+				"prerequisites": ["Metamaterials"]
+			},
+		]
+	},
+	// Transcendental Era
+	{
+		"columnNumber": 11,
+		"era": "Transcendental era",
+		"techCost": 3100,
+		"buildingCost": 1200,
+		"wonderCost": 2400,
+		"techs": [
+			{
+				"name": "Designer Lifeforms",
+				"row": 3,
+				"quote": "'Using gene samples and AI analysis, we now can create artificial genes that form never-before-seen effects on an organism. We are one step closer towards complete corporeal freedom.' - Airani Chanakya, biologist",
+				"prerequisites": ["Genetic Hybridization","Artificial Intelligence"]
+			},
+			{
+				"name": "Exotic Quantum Physics",
+				"row": 5,
+				"quote": "'Never thought strangelets can be used like that, before.' - Herzel Wurtz, quantum physicist",
+				"prerequisites": ["Artificial Intelligence"]
+			},
+			{
+				"name": "Lossless Matter Conversion",
+				"row": 8,
+				"quote": "'Absolutely no leftover material, no wasted energy, no rogue dissipation of any sort - this is a monumental achievement.' - Jin Ma Chow, applied physicist",
+				"prerequisites": ["Stasis Fields", "Antimatter Harnessing"]
+			},
+			{
+				"name": "Posthumanist Culture",
+				"row": 10,
+				"quote": "'It takes the physical to create the physical. Can you dig it? Which flower would you be?' - anonymous posthumanist meme",
+				"prerequisites": ["Mind Linking"]
+			},
+			{
+				"name": "Psionics",
+				"row": 11,
+				"quote": "'Actual telepathy! In my lifetime! Amazing. They also got telekinesis and the other flashy powers down pat too!' - Kwame Nkodo, telepathic comms engineer",
+				"prerequisites": ["Mind Linking", "Nerve Stapling"]
+			},
+			{
+				"name": "Solar Reflectors",
+				"row": 12,
+				"quote": "'We can't make an artificial sun yet, but this is the next best thing.' - Jeremy Biggins, orbital engineer",
+				"prerequisites": ["Stasis Fields", "Nanotechnology"]
+			},
+			{
+				"name": "Hyperwave Communications",
+				"row": 13,
+				"quote": "'This baby has a lag of 0.001 second per lightyear, and a bandwidth that might as well be unlimited. What more can you ask for?' - Guido Jimenez, hyperwave technician",
+				"prerequisites": ["Nanotechnology"]
+			},
+		]
+	},
+	{
+		"columnNumber": 12,
+		"era": "Transcendental era",
+		"techCost": 4100,
+		"buildingCost": 1420,
+		"wonderCost": 2840,
+		"techs": [
+			{
+				"name": "Advanced Biotech",
+				"row": 4,
+				"quote": "'No longer do we have to patch together DNA from existing ones. There will be wholly new organisms made by our own hands.' - Kumala Tridevi, biotechnologist",
+				"prerequisites": ["Designer Lifeforms"]
+			},
+			{
+				"name": "Zero Point Energy",
+				"row": 6,
+				"quote": "'Some say we're like gods, creating something from nothing. And yet they keep forgetting the enormous power requirement in keeping that nothing stay nothing. Some gods we are!' - Frida Boltzmann, zero point scientist",
+				"prerequisites": [
+					"Exotic Quantum Physics",
+					"Lossless Matter Conversion"
+				]
+			},
+			{
+				"name": "Graviton Harnessing",
+				"row": 7,
+				"quote": "'The tables have turned, gravity! We're in control now!' - Jacques Dutton, applied physicist",
+				"prerequisites": [
+					"Exotic Quantum Physics",
+					"Antimatter Harnessing"
+				]
+			},
+			{
+				"name": "N-Dimensional Exploration",
+				"row": 9,
+				"quote": "'It's high time we go higher than four dimensions. Imagine all the new horizons we'll see.' - Kayla Hurst, applied post-quantum physicist",
+				"prerequisites": [
+					"Exotic Quantum Physics",
+					"Hyperwave Communications",
+					"Posthumanist Culture"
+				]
+			},
+			{
+				"name": "Hive Mind",
+				"row": 11,
+				"quote": "'Individuality is such an obsolete mode of thought.' - 'Becky', human-derived collective consciousness",
+				"prerequisites": [
+					"Psionics",
+					"Hyperwave Communications",
+					"Posthumanist Culture"
+				]
+			},
+			{
+				"name": "FTL Travel",
+				"row": 12,
+				"quote": "'Time to spread our wings, once more. Let us race to the edge of the universe.' - Giorgiou Matapopulous, hyperspace astronaut",
+				"prerequisites": ["Hyperwave Communications","Solar Reflectors"]
+			},
+		]
+	},
+	// Singularity Era
+	{
+		"columnNumber": 13,
+		"era": "Singularity era",
+		"techCost": 9500,
+		"buildingCost": 1660,
+		"wonderCost": 3320,
+		"techs": [
+			{
+				"name": "Singularity Tech",
+				"row": 8,
+				"quote": "'All things were together, infinite both in number and in smallness; for the small too was infinite.' - Anaxagoras",
+				"prerequisites": [
+					"FTL Travel",
+					"Advanced Biotech",
+					"N-Dimensional Exploration",
+					"Zero Point Energy",
+					"Graviton Harnessing",
+					"Hive Mind"
+				],
+				"uniques": [
+					"Comment [Sometimes the end is not the end.]",
+					"Can be continually researched"
+				]
+			}
+		]
+	}
+]

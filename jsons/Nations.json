@@ -1,8 +1,8 @@
 [
 	{
-		"name": "Aliens",
-		"leaderName": "Zyxxyz",
-		"adjective": ["alien"],
+		"name": "Federation of United Planets",
+		"leaderName": "James.T.Kirk",
+		"adjective": ["federal"],
 		"startBias": ["Snow"],
 		"preferredVictoryType": "Scientific",
 		
@@ -10,7 +10,7 @@
 		"startIntroPart2": "This is an overpowered joke nation just as an example for the mods feature. Set Phasers to Obliterate!!",
 		
 		"declaringWar": "Resistance is futile! Prepare to be assimilated!",
-		"attacked": "You want to play? Very funny!",
+		"attacked": "The Federation is committed to defending its members from all attackers",
 		"defeated": "How is it possible that those Apes hurt us? The galactic senate will take care of them.",
 		"introduction": "As superior galactic entities, you are not worthy of our attention.",
 		
@@ -30,9 +30,9 @@
 		"outerColor": [16,16,16],
 		"innerColor": [255,200,200],
 		"unique": "MANIFEST_DESTINY",
-		"cities": ["The Hive","Q'Throczan","Q'Chovex","Q'Imphet","Q'Omphead","Q'Grecoks","Q'Vrelzieks","Q'Vronens","Q'Aerlae",
-			"Q'Phulnoith","Q'Creved","Q'Xirqen","Q'Gax","Q'Threqals","Q'Bhilmuk","Q'Mazea","Q'Zomirs","Q'Drorkrex","Q'Honkrath",
-			"Q'Zulgra","Q'Vahars","Q'Crindith","Q'Raavraes","Q'Bhoknais","Qho'Qru","Q'Dateatz","Q'Elnad","Q'Izien","Qol'Ell",
-			"Q'Dhihien","Q'Naquiel","Q'Ugneon","Q'Straquks","Q'Nulptr","Q'Ohfahl"]
+		"cities": ["Sol","Vulcano","Andoria","Tellar","Betazed","Trill","Deneb","Babel","Alpha Centauri",
+			"P'Jem","Wolf 359","Sirio","Vega","Memory Alpha","Tau Ceti","Terra Nova","Archer","Lorillia","Denobula Triaxa",
+			"Bernard's Star","Orai-12","","Altair","Gemet","Doska","Prya","Aruna","Earorfiliad","Achillon",
+			"","Q'Naquiel","Q'Ugneon","Q'Straquks","Q'Nulptr","Q'Ohfahl"]
 	}
 ]

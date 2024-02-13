@@ -6,26 +6,26 @@
 		"startBias": ["Snow"],
 		"preferredVictoryType": "Scientific",
 		
-		"startIntroPart1": "We come in peace!",
-		"startIntroPart2": "This is an overpowered joke nation just as an example for the mods feature. Set Phasers to Obliterate!!",
+		"startIntroPart1": "Live Long and Prosper",
+		"startIntroPart2": "The United Federation of Planets is an alliance of species dedicated to space exploration.  It was founded by Vulcans, Humans, Andorians, and Tellarites in 2161. The Federation has since expanded to include many other members and continues to grow in size, influence, and importance throughout the galaxy.",
 		
-		"declaringWar": "Resistance is futile! Prepare to be assimilated!",
+		"declaringWar": "Don't leave us any Logical solution",
 		"attacked": "The Federation is committed to defending its members from all attackers",
-		"defeated": "How is it possible that those Apes hurt us? The galactic senate will take care of them.",
-		"introduction": "As superior galactic entities, you are not worthy of our attention.",
+		"defeated": "Change is the essential process of all existence, Live Long and Prosper",
+		"introduction": "We come in peace! Live Long and Prosper",
 		
 		"neutralHello": "How are you doing?",
 		"neutralLetsHearIt": ["Go on.","What do you say?","You may begin."],
-		"neutralNo": ["We absolutely refuse.","No!","I refuse."],
-		"neutralYes": ["Very good.","Of course, yes.","That is very good."],
+		"neutralNo": ["It's highly illogical"],
+		"neutralYes": ["It's logical"],
 
 		"hateHello": "What do you want now?",
 		"hateLetsHearIt": ["Speak!","What do you say?","Go on."],
-		"hateNo": ["That is not possible!","We are not agreeing to that!","I beg your pardon?"],
-		"hateYes": ["That is fine.","That is good enough.","Very well..."],
+		"hateNo": ["That is not possible!","It's highly illogical"],
+		"hateYes": ["It's logical"],
 		
-		"afterPeace": "Very well, all that fighting was getting boring anyway.",
-		"tradeRequest": "We bestow you the honor of this trade offer.",
+		"afterPeace": "Let's hope this peace lasts a long time, Live Long and Prosper",
+		"tradeRequest": "We think you may be interested in this trade offer.",
 
 		"outerColor": [16,16,16],
 		"innerColor": [255,200,200],
@@ -33,6 +33,6 @@
 		"cities": ["Sol","Vulcano","Andoria","Tellar","Betazed","Trill","Deneb","Babel","Alpha Centauri",
 			"P'Jem","Wolf 359","Sirio","Vega","Memory Alpha","Tau Ceti","Terra Nova","Archer","Lorillia","Denobula Triaxa",
 			"Bernard's Star","Orai-12","","Altair","Gemet","Doska","Prya","Aruna","Earorfiliad","Achillon",
-			"","Q'Naquiel","Q'Ugneon","Q'Straquks","Q'Nulptr","Q'Ohfahl"]
+			"Noakyn","Thama","Axanar","Aiti","Groombridge 34","Final Frontier"]
 	}
 ]
